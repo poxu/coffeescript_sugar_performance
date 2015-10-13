@@ -1,11 +1,11 @@
 #Performance tests for CoffeeScript
 
 Tests to compare CoffeeScript array comprehensions
-vs native Javascript array traversiong lambdas
+vs native Javascript array traversing lambdas
 
 To run   
 
-    ```
-    npm install  
-    npm start
-    ```
+```
+npm install  
+npm start
+```
