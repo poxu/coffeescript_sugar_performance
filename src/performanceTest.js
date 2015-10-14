@@ -1,7 +1,7 @@
 var generateArray = require('./util.js');
 var cubes = require('./arrayTraversingFunctions.js');
 
-var array = generateArray(1000);
+var array = generateArray(100000);
 
 var getTime = function() {
     return new Date().getTime();
@@ -23,7 +23,7 @@ var countAverageTime = function(iterations, array, worker) {
     return sum;
 };
 
-var iterations = 10000;
+var iterations = 1000;
 
 var funcs = Object.keys(cubes);
 

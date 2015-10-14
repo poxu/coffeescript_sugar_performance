@@ -52,6 +52,22 @@ var sumSugar = (function() {
     };
 }());
 
+var sumSugarWithFunctionCall = (function() {
+    var doSum = function(sum, curr) {
+        return sum+curr;
+    };
+
+    return function(array) {
+        var i, len, sum = 0;
+        for (i = 0, len = array.length; i < len; i++) {
+            var num = array[i];
+            sum = doSum(sum, num);
+        }
+        return sum;
+    };
+}());
+
+
 var sumLambda = (function() {
     return function(array) {
         return array.reduce(function(prev, curr) {
@@ -65,9 +81,10 @@ if (typeof module !== 'undefined') {
         cubesShugar : cubesShugar,
         cubesLambda : cubesLambda,
         honestCubesLambda : honestCubesLambda,
+        totallyHonestCubesLambda: totallyHonestCubesLambda,
         sumSugar : sumSugar,
-        sumLambda : sumLambda,
-        totallyHonestCubesLambda: totallyHonestCubesLambda
+        sumSugarWithFunctionCall : sumSugarWithFunctionCall,
+        sumLambda : sumLambda
     };
 }
 

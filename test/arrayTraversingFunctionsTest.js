@@ -9,6 +9,7 @@ var totallyHonestCubesLambda = exports.totallyHonestCubesLambda;
 
 
 var sumSugar = exports.sumSugar;
+var sumSugarWithFunctionCall = exports.sumSugarWithFunctionCall;
 var sumLambda = exports.sumLambda;
 
 describe('ArrayTraversal', function() {
@@ -43,6 +44,7 @@ describe('ArrayTraversal', function() {
     describe('#sums', function() {
         [
             sumSugar,
+            sumSugarWithFunctionCall,
             sumLambda
 
         ].forEach(function(func) { 
